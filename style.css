@@ -1,0 +1,42 @@
+body {
+    margin: 0px; /*removes the white border from around the entire webpage body*/
+}
+
+.blue_section {
+    background: #1F2937;
+    color: #F9FAF8;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+ul {
+    list-style-type: none; /*This removes the bullet points from the list items*/
+}
+
+li {
+    float: left; /*This makes the list horizontal, instead of vertical*/
+}
+
+li a {
+    font-size: 18px;
+    padding: 14px; /*This adds space around the list items*/
+    color: #E5E7EB;
+    text-decoration: none; /*This removes the line under the links*/
+}
+
+li a:hover {
+    color: orangered; /*This changes the color of the link text when you hover over it*/
+}
+
+.section_1 {
+
+}
