@@ -1,16 +1,19 @@
 body {
-    margin: 0px; /*removes the white border from around the entire webpage body*/
+    margin: 0px; /*Removes the white border from around the entire webpage body*/
+    font-family: serif, sans-serif;
 }
 
 .blue_section {
     background: #1F2937;
     color: #F9FAF8;
+    padding-bottom: 80px;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 60px;
 }
 
 h2 {
@@ -19,24 +22,102 @@ h2 {
 }
 
 ul {
-    list-style-type: none; /*This removes the bullet points from the list items*/
+    list-style-type: none; /*Removes the bullet points from the list items*/
 }
 
 li {
-    float: left; /*This makes the list horizontal, instead of vertical*/
+    float: left; /*Makes the list horizontal, instead of vertical*/
 }
 
 li a {
     font-size: 18px;
-    padding: 14px; /*This adds space around the list items*/
+    padding: 14px; /*Adds space around the list items*/
     color: #E5E7EB;
-    text-decoration: none; /*This removes the line under the links*/
+    text-decoration: none; /*Removes the line under the links*/
 }
 
 li a:hover {
-    color: orangered; /*This changes the color of the link text when you hover over it*/
+    color: orangered; /*Changes the color of the link text when you hover over it*/
 }
 
 .section_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.section_1 h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.section_1_left {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 500px;
+}
+
+button {
+    background-color: #3882F6;
+    border: #3882F6; /*Makes the button border the same color as the button background color*/
+    color: #E5E7EB;
+    border-radius: 10px; /*Rounds the edges of the button*/
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    transition-duration: 0.4s; /*Determines how long the hover animation takes*/
+}
+
+button:hover { /*Determines what happens when you hover your mouse over the button*/
+    background-color: white;
+    color: black;
+    cursor: pointer; /*Turns the mouse cursor into a hand when hovering over the button*/
+}
+
+button:active {
+    transform: scale(0.94); /*Scaling button to 0.94 its original size*/
+}
+
+.section_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.section_2 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.section_2_middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item_image {
+    padding: 18px;
+    width: 200px;
+    text-align: center;
+}
+
+.section_2_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image_text {
+    padding: 18px;
+    width: 200px;
+    text-align: center;
 }
