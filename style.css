@@ -14,7 +14,6 @@ body {
     align-items: center;
     justify-content: space-around;
     padding-bottom: 60px;
-    padding-left: 30px;
 }
 
 h2 {
@@ -44,7 +43,9 @@ li a:hover {
 .section_1 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .section_1 h1 {
@@ -92,6 +93,7 @@ button:active {
     font-size: 36px;
     font-weight: bold;
     color: #1F2937;
+    padding-bottom: 40px;
 }
 
 .section_2_middle {
@@ -104,14 +106,27 @@ button:active {
 
 .item_image {
     padding: 18px;
+    gap: 20px;
     width: 200px;
-    text-align: center;
+    height: 200px;
+    border-radius: 8px;
+    border: 3px solid #1F2937;
+}
+
+.item_image:hover { /*Determines what happens when you hover your mouse over the image*/
+    background-color: #1F2937;
+    color: white;
+    cursor: pointer;
+}
+
+.item_image:active {
+    transform: scale(0.94); /*Scaling item image to 0.94 its original size when clicked*/
 }
 
 .section_2_bottom {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -119,6 +134,8 @@ button:active {
 .image_text {
     padding: 18px;
     width: 200px;
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
 }
 
