@@ -19,6 +19,7 @@ body {
 h2 {
     font-size: 24px;
     color: #F9FAF8;
+    margin-left: 10px;
 }
 
 ul {
@@ -40,6 +41,10 @@ li a:hover {
     color: orangered; /*Changes the color of the link text when you hover over it*/
 }
 
+li:active {
+    transform: scale(0.94); /*Scales link text to 0.94 its original size when clicked*/
+}
+
 .section_1 {
     display: flex;
     align-items: center;
@@ -51,6 +56,10 @@ li a:hover {
 .section_1 h1 {
     font-size: 48px;
     font-weight: bold;
+}
+
+.section_1 p {
+    font-size: 18px;
 }
 
 .section_1_left {
@@ -77,7 +86,7 @@ button:hover { /*Determines what happens when you hover your mouse over the butt
 }
 
 button:active {
-    transform: scale(0.94); /*Scaling button to 0.94 its original size*/
+    transform: scale(0.94); /*Scales button to 0.94 its original size*/
 }
 
 .section_2 {
@@ -120,7 +129,7 @@ button:active {
 }
 
 .item_image:active {
-    transform: scale(0.94); /*Scaling item image to 0.94 its original size when clicked*/
+    transform: scale(0.94); /*Scales item image to 0.94 its original size when clicked*/
 }
 
 .section_2_bottom {
